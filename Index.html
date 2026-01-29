@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="Images/navbar/logo.png" alt="App Logo" class="nav-logo" />
+            <button class="back-btn">
+                <img src="Images/navbar/back.png" alt="Back" />
+            </button>
+            <button class="forward-btn">
+                <img src="Images/navbar/forward.png" alt="forward" />
+            </button>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="What do you want to play?" />
+          <!--  <button class="menu-btn">
+                <img src="menu-icon.png" alt="Menu" />
+            </button> -->
+        </div>
+        <div class="nav-right">
+            <button>
+                <img src="Images/navbar/notifications.png" alt="Notifications" />
+            </button>
+            <button>
+                <img src="Images/navbar/download.png" alt="Downloads" />
+            </button>
+            <button>
+                <img src="Images/navbar/favorite.png" alt="Favorites" />
+            </button>
+            <button>
+                <img src="Images/navbar/Generic avatar.png" alt="User Profile" class="nav-avatar" height="64px" />
+            </button>
+        </div>
+    </nav>
+
+    <!-- Quick Navigation: Category + Main Buttons -->
+    <div class="quick-nav">
+        <div class="categories">
+            <button class="small-btn active">All</button>
+            <button class="small-btn">Podcasts</button>
+            <button class="small-btn">Music</button>
+        </div>
+        <div class="big-nav-grid">
+            <button class="big-btn">LikedSongs</button>
+            <button class="big-btn">Trending</button>
+            <button class="big-btn">Karan Aujla</button>
+            <button class="big-btn">Gym</button>
+            <button class="big-btn">Ovo Sound</button>
+            <button class="big-btn">Travel Tune</button>
+        </div>
+    </div>
+
+    <div class="main-flex">
+        <!-- Left Main Content -->
+        <main class="main-content">
+            <!-- Trending Songs -->
+            <section class="trending-songs">
+                <div class="section-header">
+                    <h3>Trending Songs</h3>
+                    <button class="show-all">Show All</button>
+                </div>
+                <div class="songs-list">
+                    <div class="song-card">
+
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Trending/Timeless.jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Timeless</h4>
+                            <p>The Weeknd, Playboi Carti</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Trending/Saiyaara.jpg" alt="Timeless Song Cover" class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Saiyaara</h4>
+                            <p>Tanishk Bagchi, Arijit Singh</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Trending/Sapphire.jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Sapphire</h4>
+                            <p>Ed Sheeran, Ajit Singh</p>
+                        </div>
+                    </div>
+                    <!-- Add more song cards as needed -->
+                </div>
+            </section>
+
+            <!-- Popular Artists -->
+        <section class="popular-artists">
+  <div class="section-header">
+    <h3>Popular Artists</h3>
+    <button class="show-all">Show All</button>
+  </div>
+  <div class="artists-list">
+    <div class="artist-card">
+      <img src="Images/Singer/Arijit Singh.jpg" alt="Arijit Singh" class="artist-photo" />
+      <p class="name">Arjit Singh</p>
+      <p class="label">Artist</p>
+    </div>
+    <div class="artist-card">
+      <img src="Images/Singer/AR Rahman.jpg" alt="A.R. Rahman" class="artist-photo" />
+      <p class="name">A.R. Rahman</p>
+      <p class="label">Artist</p>
+    </div>
+    <div class="artist-card">
+      <img src="Images/Singer/Pritam.jpg" alt="Pritam" class="artist-photo" />
+      <p class="name">Pritam</p>
+      <p class="label">Artist</p>
+    </div>
+    <div class="artist-card">
+      <img src="Images/Singer/Yo Yo Honey Singh.jpg" alt="Yo Yo Honey Singh" class="artist-photo" />
+      <p class="name">Yo Yo Honey Singh</p>
+      <p class="label">Artist</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Albums and Singles  -->
+            <section class="trending-songs">
+                <div class="section-header">
+                    <h3>Trending Songs</h3>
+                    <button class="show-all">Show All</button>
+                </div>
+                <div class="songs-list">
+                    <div class="song-card">
+
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Popular Album and Singles/img (1).jpg" alt="Aashiqui 2 Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Aashiqui 2</h4>
+                            <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Popular Album and Singles/img (2).jpg" alt="Timeless Song Cover" class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Finding Her</h4>
+                            <p>Kushagra, Bharath, Saaheal</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Popular Album and Singles/img (3).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Ultimate Love Songs - Arjit Singh</h4>
+                            <p>Arjit Singh</p>
+                        </div>
+                    </div>
+                       <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Popular Album and Singles/img (4).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Young G.O.A.T</h4>
+                            <p>Cheema Y, Gur Sidhu</p>
+                        </div>
+                    </div>
+                       <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Popular Album and Singles/img (5).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Moonchild Era</h4>
+                            <p>Diljit Dosanjh</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more song cards as needed -->
+                </div>
+            </section>
+
+            <!-- Featured Charts -->
+            <section class="trending-songs">
+                <div class="section-header">
+                    <h3>Featured Charts</h3>
+                    <button class="show-all">Show All</button>
+                </div>
+                <div class="songs-list">
+                    <div class="song-card">
+
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Featured/img (2).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Top 50 most played Songs Globally</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Featured/img (6).jpg" alt="Timeless Song Cover" class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Top 50 most played Songs in India</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Featured/img (4).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>All time Punjabi hits</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                             <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Featured/img (3).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Hollywood Hits</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                             <div class="song-card">
+                        <div class="song-cover-container">
+                            <img src="Images/Song Art/Featured/img (5).jpg" alt="Timeless Song Cover"
+                                class="song-cover" />
+                            <div class="song-play-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="8,5 19,12 8,19" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <h4>Bollywood Love Songs</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- Add more song cards as needed -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Right SideBar: Now Playing + About the Artist -->
+        <aside class="right-sidebar">
+            <!-- Now Playing Section -->
+            <section class="now-playing">
+                <div class="now-playing-header">Now Playing</div>
+                <img src="Images/Love ya.jpg" alt="Love Ya Album Art" class="np-cover" />
+                <h2 class="song-title">Love Ya</h2>
+                <p class="song-artist">Diljit Dosanjh, Sagar</p>
+                <div class="np-controls">
+                    <button onclick="playPause()">
+                        <img src="Images/player/previous.png" alt="Previous" />
+                    </button>
+                    <button>
+                        <img src="Images/player/play.png" alt="Play" />
+                    </button>
+                    <button>
+                        <img src="Images/player/next.png" alt="Next" />
+                    </button>
+                </div>
+            </section>
+            <!-- About the Artist Section -->
+            <section class="about-artist">
+                <img src="Images/Singer/Diljit Dosanjh.jpg" alt="Diljit Dosanjh" class="artist-info-photo" />
+                <h4>Diljit Dosanjh</h4>
+                <p class="monthly-listeners">17,647,294 monthly listeners</p>
+                <button class="follow-btn">Follow</button>
+                <p class="about-description">
+                    Diljit Dosanjh is the most-streamed Punjabi artist on Gen Fusion, holding a significant global reach
+                    with over 27 million monthly listeners. A testament to his wide appeal and consistent output.
+                </p>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Footer HTML -->
+<footer class="site-footer">
+  <div class="footer-divider"></div>
+  <div class="footer-content">
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Communities</h4>
+        <ul>
+          <li><a href="#">For Artists</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Investors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Free Mobile App</a></li>
+          <li><a href="#">Popular by Country</a></li>
+          <li><a href="#">Import Your Music</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="x-twitter.svg" alt="X" /></a>
+      <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">
+    &copy; 2025 GenFusion
+  </div>
+</footer>
+
+
+    <script>
+        function playPause() {
+            alert('Play/Pause toggled');
+        }
+        document.querySelectorAll(".small-btn").forEach(btn => {
+            btn.addEventListener("click", function () {
+                document.querySelectorAll(".small-btn").forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
